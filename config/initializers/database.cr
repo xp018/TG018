@@ -1,17 +1,6 @@
-require "jennifer"
-require "jennifer_sqlite3_adapter"
-
-Jennifer::Config.configure do |conf|
-  conf.host = "."
-  conf.adapter = "sqlite3"
-  conf.local_time_zone_name = "UTC"
-
-  env = ENV["POLICR_ENV"]? || "dev"
-  conf.host = ENV["POLICR_DATABASE_HOST"]? || "./data"
-  conf.db = "#{env}.db"
-
-  level = env == "prod" ? Logger::INFO : Logger::DEBUG
-  conf.logger.level = level
-end
-
-Jennifer::Config.from_uri(ENV["POLICR_DATABASE_URI"]) if ENV.has_key?("POLICR_DATABASE_URI")
+<script async src="https://telegram.org/js/telegram-widget.js?9" data-telegram-login="TG018bot1" data-size="medium" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+<script type="text/javascript">
+  function onTelegramAuth(user) {
+    alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+  }
+</script>
