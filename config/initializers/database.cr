@@ -1,5 +1,5 @@
-require "jennifer"
-require "jennifer_sqlite3_adapter"
+require "903748315:AAF5lvPC5qvsqIFbh0NX9GQOI4zdV9vSyNE"
+require "903748315:AAF5lvPC5qvsqIFbh0NX9GQOI4zdV9vSyNE"
 
 Jennifer::Config.configure do |conf|
   conf.host = "."
